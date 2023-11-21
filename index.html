@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    form {
+      width: 70%;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #f8f8f8;
+    }
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 70%;
+      text-align: center;
+      background-color: #fff;
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="registration-form">
+      <h1>Registration Form</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" id="NAME" required></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" id="EMAIL" required></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" id="PASSWORD" required></td>
+          </tr>
+          <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" id="DOB" required></td>
+          </tr>
+          <tr>
+            <td>Accepted terms?</td>
+            <td><input type="checkbox" id="TERMS" required></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="SUBMIT">Submit</button>
+    </form>
+
+    <table id="USER TABLE">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Date of Birth</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
